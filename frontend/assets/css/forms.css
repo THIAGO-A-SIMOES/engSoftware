@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: rgb(255, 255, 255);
+    border: none;
+}.row{color: none;}
+
+body{
+    background-color: #1e1732;
+}
+
+#erro1{
+    background-color: #f6a5ad;
+    border-radius: 6px;
+    height: 40px;
+    margin: 8px;
+    justify-content: center;
+}
+#erro{
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #720028;
+}
+
+#success1{
+    background-color: #e4ffee;
+    border-radius: 6px;
+    height: 40px;
+    margin: 8px;
+    justify-content: center;
+}
+#success{
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #26b494;
+}
+
+#login-container,#cadUser-container,#password-recover-container{
+    background-color: rgba(0, 0, 0, 0.459);
+    width: 500px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+a, label{
+    font-size: .8rem; /*REM = tam da fonte padrao do HTMl */
+}
+
+a:hover{
+    color:#f8f8f8;
+}
+
+form{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+label, input{
+    display: block;
+    width: 100%;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+input, button{
+    border-bottom: 2px solid #f8f8f8;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 45px;
+}
+
+label{
+    font-weight: bold;
+}
+
+input:focus{
+    outline: 0;
+    border-bottom: 2px solid #6f80bc;
+}
+
+input[type="submit"], button{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 0.2px solid #6f80bc;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.459);
+    cursor: pointer;
+}
+
+
+input[type="submit"]:hover, button:hover{
+    background-color: #1e1732;
+    transition: .2s;
+}
+

@@ -1,0 +1,22 @@
+<%- include('includes/head');%>
+
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <div id="cadUser-container">
+        <h1>Cadastrar</h1>
+        <%- include('includes/messages');%>
+        <form action="/register" method="post">
+            <input type="hidden" name="_csrf" value ="<%= csrfToken %>" >
+            <label for="text">Nome Completo:</label>
+            <input type="text" name="name" id="name" placeholder="Digite seu nome completo.">
+            <label for="email">E-mail de Usuário:</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail para login.">
+            <label for="password">Senha:</label>
+            <input type="password" name="password" id="password" placeholder="Digite sua senha.">
+            <button>Cadastrar</button>
+            <a href="/login">Voltar</a>
+        </form>
+    </div>
+</body>
+</html>
